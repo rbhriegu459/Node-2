@@ -1,6 +1,14 @@
-const prod = (x,y)=>{
-    return x*y;
+const prod = (x,y)=> x*y;
+
+console.log(prod(2,3));
+
+const Student = {
+    name: "Rishita",
+    age : 22,
+    greetTeacher: function(){
+        console.log("Good Morning from "+this.name);
+    }
 }
 
-let a = 2, b=4;
-console.log(prod(a,b));
+Student.greetTeacher();
+
